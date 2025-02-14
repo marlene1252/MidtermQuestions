@@ -19,3 +19,17 @@ for word in words:
 print(f"{sentence}translates to: {translation}")
 print(list(eng_to_spa.values())) #keys is the english, values is the spanish
 print(list(eng_to_spa.keys()))
+x = eng_to_spa.pop("pineapple") #forgot how to say pineapple
+print(x)
+print(eng_to_spa) # has removed pineapple
+
+if "car" in eng_to_spa:
+    print(eng_to_spa["car"])
+else:
+    print("i dont know this word")
+
+print(eng_to_spa.get("car", "sorry dont know"))
+eng_to_spa.setdefault("one", "sorry dont know")
+eng_to_spa.setdefault("monkey", "sorry dont know")
+print(eng_to_spa)
+
